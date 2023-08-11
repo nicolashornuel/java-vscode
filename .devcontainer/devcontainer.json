@@ -5,6 +5,9 @@
       "version": 8,
       "installMaven": true,
       "installAnt": true
+    },
+    "ghcr.io/devcontainers-contrib/features/tomcat-sdkman:2": {
+      "jdkVersion": 8
     }
   }
 }

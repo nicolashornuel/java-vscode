@@ -6,6 +6,13 @@ package com.mycompany.app;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        Person p1 = new Person(20, "jean-paul");
+        Person p2 = p1;
+        p1.setName("alphonse");
+
+        System.out.println(p1.getName());
+        System.out.println(p2.getName());
     }
 }
+

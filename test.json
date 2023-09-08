@@ -1,0 +1,1053 @@
+{
+    "masterModel": "m_courrier.jrxml",
+    "name": "Perso. edition",
+    "blocs": {
+        "m_courrier.jrxml": {
+            "type": "blocContainer",
+            "key": "m_courrier.jrxml",
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "displayable": true,
+            "model": "m_courrier.jrxml",
+            "children": [
+                {
+                    "type": "blocElement",
+                    "key": "courrier.faxs",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 168,
+                    "width": 240,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.lot",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 286,
+                    "width": 481,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocContainer",
+                    "key": "main.subreport",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 12,
+                    "width": 481,
+                    "height": 12,
+                    "displayable": true,
+                    "band": {
+                        "name": "detail",
+                        "height": 24
+                    },
+                    "model": "sub_articles_level_1_grand_footer.jrxml",
+                    "children": [],
+                    "margins": {
+                        "left": 0,
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.mail",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 56,
+                    "y": 0,
+                    "width": 184,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"MAIL\")).getValue()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "logo2",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 29,
+                    "width": 481,
+                    "height": 72,
+                    "alignment": "GAUCHE",
+                    "displayable": true,
+                    "band": {
+                        "name": "pageFooter",
+                        "height": 101
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.ref",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 56,
+                    "y": 0,
+                    "width": 184,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "( !((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"REFS\")).getValue().equals(\"\") ? ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"REFS\")).getValue() + \" \" : \"\" ) +\n( ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"CHRONO\")).getValue() != null ? + ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"CHRONO\")).getValue() : \"\" )"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.tels",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 153,
+                    "width": 240,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.footNote",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 481,
+                    "height": 25,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 8,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "pageFooter",
+                        "height": 101
+                    },
+                    "label": "$V{footNote}"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.tel",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 56,
+                    "y": 0,
+                    "width": 184,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"TEL\")).getValue()!=null ? ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"TEL\")).getValue() :\"\" )+\n(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"POSTE_TEL\")).getValue() != null ? \" / \" + ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"POSTE_TEL\")).getValue() : \"\")"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.exp",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 1,
+                    "y": 91,
+                    "width": 239,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{consultation}.getData().toArray()[0].getEtendueAdressePrestation().getAdressePrincipale().getFormatteAdresse()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.fax",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 56,
+                    "y": 0,
+                    "width": 184,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"FAX\")).getValue()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.consult.code",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 80,
+                    "y": 0,
+                    "width": 400,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{consultation}.getData().toArray()[0].code"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.ref.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 56,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"N/Réf. :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.ac.code",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 80,
+                    "y": 0,
+                    "width": 401,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{numaccordcadre}.getData().toArray()[0]"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.ac",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 256,
+                    "width": 481,
+                    "height": 30,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.mail.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 56,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Courriel :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.contact",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 123,
+                    "width": 240,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocContainer",
+                    "key": "courrier.dest",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 241,
+                    "y": 108,
+                    "width": 240,
+                    "height": 30,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "model": "bloc_adr_dest.jrxml",
+                    "children": [
+                        {
+                            "type": "blocElement",
+                            "key": "courrier.dest.adresse",
+                            "parentKey": "courrier.dest",
+                            "x": 0,
+                            "y": 15,
+                            "width": 240,
+                            "height": 15,
+                            "displayable": true,
+                            "style": {
+                                "police": "SansSerif",
+                                "size": 10,
+                                "color": -16777216,
+                                "bgColor": -1,
+                                "bold": false,
+                                "italic": false,
+                                "underline": false,
+                                "hTextAlign": "GAUCHE",
+                                "vTextAlign": "HAUT"
+                            },
+                            "band": {
+                                "name": "title",
+                                "height": 301
+                            },
+                            "label": "$F{adresse}"
+                        },
+                        {
+                            "type": "blocElement",
+                            "key": "courrier.dest.denomination",
+                            "parentKey": "courrier.dest",
+                            "x": 0,
+                            "y": 0,
+                            "width": 240,
+                            "height": 15,
+                            "displayable": true,
+                            "style": {
+                                "police": "SansSerif",
+                                "size": 10,
+                                "color": -16777216,
+                                "bgColor": -1,
+                                "bold": true,
+                                "italic": false,
+                                "underline": false,
+                                "hTextAlign": "GAUCHE",
+                                "vTextAlign": "MILIEU"
+                            },
+                            "band": {
+                                "name": "title",
+                                "height": 301
+                            },
+                            "label": "$F{denomination}"
+                        }
+                    ],
+                    "margins": {
+                        "left": 0,
+                        "top": 0,
+                        "right": 0,
+                        "bottom": 0
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.consult.objet",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 80,
+                    "y": 15,
+                    "width": 400,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "JUSTIFIE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{consultation}.getData().toArray()[0].objet"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.consult.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 80,
+                    "height": 30,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Consultation :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "logo",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 1,
+                    "width": 481,
+                    "height": 72,
+                    "alignment": "GAUCHE",
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.date",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 241,
+                    "y": 76,
+                    "width": 240,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{consultation}.getData().toArray()[0].villeDeSignature + \", le \" +  new SimpleDateFormat(\"dd MMMMM yyyy\").format($P{DATE_COURRIER})"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.consult",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 226,
+                    "width": 480,
+                    "height": 30,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.objet.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 80,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Objet :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.obj",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 208,
+                    "width": 480,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.ac.objet",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 80,
+                    "y": 15,
+                    "width": 401,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "JUSTIFIE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{accordcadre}.getData().toArray()[0].objet"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.objet",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 80,
+                    "y": 0,
+                    "width": 400,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$P{TITRE}"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.lot.code",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 80,
+                    "y": 0,
+                    "width": 401,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "$F{lot}.getData().toArray()[0].code"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.suivi.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 56,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Contact :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.suivi",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 56,
+                    "y": 0,
+                    "width": 184,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get(\"SUIVI_PAR\")).getValue()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.fax.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 56,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Fax :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.lv2",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 195,
+                    "width": 481,
+                    "height": 12,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.mails",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 138,
+                    "width": 240,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.lv1",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 183,
+                    "width": 481,
+                    "height": 12,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.ac.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 80,
+                    "height": 30,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "($P{SHORTNAME}.equals(\"CONSULTMS\")?\"Accord-cadre de référence :\":\"\")"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.tel.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 56,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Tél. :\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.lv3",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 481,
+                    "height": 12,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "band": {
+                        "name": "detail",
+                        "height": 24
+                    },
+                    "label": "\"\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.refs",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 108,
+                    "width": 240,
+                    "height": 15,
+                    "displayable": true,
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "courrier.lot.lib",
+                    "parentKey": "m_courrier.jrxml",
+                    "x": 0,
+                    "y": 0,
+                    "width": 80,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "band": {
+                        "name": "title",
+                        "height": 301
+                    },
+                    "label": "\"Lot N° :\""
+                }
+            ],
+            "margins": {
+                "left": 57,
+                "top": 57,
+                "right": 57,
+                "bottom": 57
+            },
+            "orientation": "PORTRAIT"
+        }
+    },
+    "styles": {
+        "Heading 1": {
+            "size": 14,
+            "color": -13421773,
+            "bgColor": -1,
+            "bold": true
+        },
+        "Heading 2": {
+            "size": 12,
+            "color": -11776948,
+            "bgColor": -1,
+            "bold": true
+        },
+        "Heading 3": {
+            "size": 11,
+            "color": -11776948,
+            "bgColor": -1,
+            "bold": true
+        },
+        "Normal": {
+            "police": "Trebuchet MS",
+            "size": 10,
+            "bgColor": -1
+        },
+        "ParagrapheIndent1": {
+            "bgColor": -1,
+            "hTextAlign": "JUSTIFIE",
+            "vTextAlign": "HAUT"
+        },
+        "ParagrapheIndent2": {
+            "bgColor": -1,
+            "hTextAlign": "JUSTIFIE",
+            "vTextAlign": "HAUT"
+        },
+        "ParagrapheIndent3": {
+            "bgColor": -1,
+            "hTextAlign": "JUSTIFIE",
+            "vTextAlign": "HAUT"
+        },
+        "PiedDePage": {
+            "size": 9,
+            "color": -10066330,
+            "bgColor": -1
+        },
+        "TitreCadre": {
+            "size": 14,
+            "color": -1,
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table": {
+            "bgColor": -1,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "HAUT"
+        },
+        "table CF": {
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table CH": {
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table TD": {
+            "bgColor": -1
+        },
+        "tableGroupe": {
+            "bgColor": -1,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "HAUT"
+        }
+    },
+    "margins": {
+        "left": 114,
+        "top": 57,
+        "right": 29,
+        "bottom": 29
+    },
+    "bands": {
+        "detail": {
+            "name": "detail",
+            "height": 24
+        },
+        "pageFooter": {
+            "name": "pageFooter",
+            "height": 101
+        },
+        "title": {
+            "name": "title",
+            "height": 301
+        }
+    },
+    "autoResize": true
+}

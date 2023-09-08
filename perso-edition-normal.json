@@ -1,0 +1,84 @@
+{
+    "masterModel": "m_acc_courrier.jrxml",
+    "name": "Perso. edition",
+    "blocs": {
+        "m_acc_courrier.jrxml": {
+            "type": "blocContainer",
+            "key": "m_acc_courrier.jrxml",
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "displayable": true,
+            "model": "m_acc_courrier.jrxml",
+            "children": [
+                {
+                    "type": "blocElement",
+                    "key": "logo2",
+                    "parentKey": "m_acc_courrier.jrxml",
+                    "x": 0,
+                    "y": 29,
+                    "width": 481,
+                    "height": 72,
+                    "alignment": "GAUCHE",
+                    "displayable": true
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.titre",
+                    "parentKey": "m_acc_courrier.jrxml",
+                    "x": 1,
+                    "y": 73,
+                    "width": 480,
+                    "height": 29,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 18,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{TITRE}.toUpperCase()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "logo",
+                    "parentKey": "m_acc_courrier.jrxml",
+                    "x": 0,
+                    "y": 1,
+                    "width": 481,
+                    "height": 72,
+                    "alignment": "GAUCHE",
+                    "displayable": true
+                }
+            ],
+            "margins": {
+                "left": 57,
+                "top": 57,
+                "right": 57,
+                "bottom": 10
+            },
+            "orientation": "PORTRAIT"
+        }
+    },
+    "styles": {
+        "Normal": {
+            "police": "Century Gothic",
+            "size": 8,
+            "bgColor": -1
+        }
+    },
+    "margins": {
+        "left": 57,
+        "top": 57,
+        "right": 57,
+        "bottom": 10
+    },
+    "bands": {},
+    "autoResize": true
+}

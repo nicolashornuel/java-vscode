@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="m_sam_courrier" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="29" bottomMargin="1" scriptletClass="com.agysoft.editionengine.impl.formatting.jr.scriptlet.TableOfContentsScriptlet" whenResourceMissingType="Empty" uuid="1ff39e1e-d7d9-494d-a582-04278db3034d">
+	<property name="ireport.zoom" value="1.9965000000000006"/>
+	<property name="ireport.x" value="138"/>
+	<property name="ireport.y" value="152"/>
+	<template><![CDATA[$P{STYLE_TEMPLATE}]]></template>
+	<parameter name="STYLE_TEMPLATE" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["styles_courriers.jrtx"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DATE_COURRIER" class="java.util.Date" isForPrompting="false"/>
+	<parameter name="TITRE" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="EDITION_LOGO" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="SHOW_CUSTOMIZATION" class="java.lang.Boolean"/>
+	<parameter name="SHORTNAME" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="OPTIONS" class="java.util.Map" isForPrompting="false"/>
+	<parameter name="EDITION_LOGO_2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="CONTACT_COURRIER" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tiers" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[getData()]]></fieldDescription>
+	</field>
+	<field name="clausier" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="contrat" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="utilisateur" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="accordcadre" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="dateNotification" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<variable name="footNote" class="java.lang.String">
+		<variableExpression><![CDATA["footNote"]]></variableExpression>
+		<initialValueExpression><![CDATA["footNote"]]></initialValueExpression>
+	</variable>
+	<variable name="tableOfContents" class="java.util.Collection" calculation="System">
+		<initialValueExpression><![CDATA[new java.util.ArrayList()]]></initialValueExpression>
+	</variable>
+	<title>
+		<band height="281" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="1" height="1" forecolor="#FFFFFF" uuid="be0b34f5-8af0-4e67-8872-fa88245886d6">
+					<printWhenExpression><![CDATA[((com.agysoft.editionengine.impl.formatting.jr.scriptlet.TableOfContentsScriptlet)$P{REPORT_SCRIPTLET}).init()]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<image scaleImage="RetainShape" hAlign="Left" vAlign="Top" onErrorType="Blank">
+				<reportElement key="logo" positionType="Float" isPrintRepeatedValues="false" x="31" y="1" width="467" height="94" uuid="cc802dec-2d76-41a2-8109-bd7140d656a4">
+					<property name="net.sf.jasperreports.export.html.class" value="preview_header_logo-50"/>
+					<printWhenExpression><![CDATA[!(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("L") || ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("l"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{EDITION_LOGO}]]></imageExpression>
+			</image>
+			<subreport>
+				<reportElement x="328" y="133" width="169" height="68" uuid="4f44d84d-2b15-43dc-a18c-fc23fe978a00"/>
+				<subreportParameter name="STYLE_TEMPLATE">
+					<subreportParameterExpression><![CDATA[$P{STYLE_TEMPLATE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$F{tiers}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["bloc_adr_dest.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="Normal" positionType="Float" x="328" y="201" width="250" height="16" isPrintWhenDetailOverflows="true" uuid="0aa6329f-c93a-41eb-8f29-b5193ac9d8f9">
+					<printWhenExpression><![CDATA[!(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("M") || ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("m"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Courriel : "+$F{tiers}.getData().toArray()[0].getCourriel()]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="97" y="216" width="231" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="8b7365e2-5de4-4521-a463-77ebc3690362"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Normal" x="0" y="0" width="231" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="f355c6a5-77e0-4348-b24c-42418d60ce58"/>
+					<textElement markup="html">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Affaire suivie par : "+((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("SUIVI_PAR")).getValue()+"<br>Tél. "+(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("TEL")).getValue()!=null ? ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("TEL")).getValue() :"" )+
+(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("POSTE_TEL")).getValue() != null ? " / " + ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("POSTE_TEL")).getValue() : "")+"<br>Courriel : "+((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("MAIL")).getValue()+"<br><br>"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="97" y="261" width="401" height="20" isPrintWhenDetailOverflows="true" uuid="6c0354b3-57c9-4012-8617-5438bbecfff3"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Normal" x="0" y="0" width="203" height="5" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="bd70feb2-fef4-4d7f-9064-c3223d60bc5d"/>
+					<textElement markup="html">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Objet : Marché n° "+$F{contrat}.getData().toArray()[0].code]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Normal" x="231" y="0" width="169" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="cc55052e-1cb3-4c3a-8c16-4bebc6bc5432"/>
+					<textElement markup="html">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{contrat}.getData().toArray()[0].villeDeSignature + ", le " +  new SimpleDateFormat("dd MMMMM yyyy").format($P{DATE_COURRIER})]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<detail>
+		<band height="130">
+			<subreport isUsingCache="true" runToBottom="false">
+				<reportElement key="main.subreport" x="97" y="0" width="481" height="15" isRemoveLineWhenBlank="true" uuid="dd61d5cf-8435-4f34-9ccc-e2bc15d1899d"/>
+				<subreportParameter name="TIERS">
+					<subreportParameterExpression><![CDATA[$F{tiers}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="STYLE_TEMPLATE">
+					<subreportParameterExpression><![CDATA[$P{STYLE_TEMPLATE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DISPLAY_PAGE_NUMBER">
+					<subreportParameterExpression><![CDATA[java.lang.Boolean.FALSE]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="SHOW_CUSTOMIZATION">
+					<subreportParameterExpression><![CDATA[$P{SHOW_CUSTOMIZATION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$F{clausier}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["sub_articles_level_1_grand_footer.jasper"]]></subreportExpression>
+			</subreport>
+			<frame>
+				<reportElement positionType="Float" x="97" y="110" width="400" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="d03806c3-f721-401e-b6ef-989284a70af0"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="0" y="0" width="400" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e5200ce2-a3df-4dee-887c-7549854f6358">
+						<printWhenExpression><![CDATA[((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("FAX")).getValue().contains("c") || ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("FAX")).getValue().contains("C")]]></printWhenExpression>
+					</reportElement>
+					<textElement markup="html">
+						<font fontName="Verdana" size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Copie à : Sous-traitant"]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="Normal" positionType="Float" x="338" y="22" width="203" height="12" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="6ba7b871-23d5-40a3-a262-d70fcc2e8ba3">
+					<printWhenExpression><![CDATA[((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("S") || ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("s")]]></printWhenExpression>
+				</reportElement>
+				<textElement markup="html">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["M. Dominique Rolling<BR>Responsable Commande Publique"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="133">
+			<printWhenExpression><![CDATA[$V{footNote} != null]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement style="PiedDePage" x="97" y="0" width="401" height="25" isRemoveLineWhenBlank="true" uuid="32c92d60-0b01-4667-9ab1-2b9c631806c1"/>
+				<textElement verticalAlignment="Top" markup="html">
+					<font size="8" isStrikeThrough="false" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{footNote}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Bottom" onErrorType="Blank">
+				<reportElement key="logo2" positionType="FixRelativeToBottom" x="0" y="25" width="595" height="108" uuid="d4de6366-7710-42be-924c-99709f13828a">
+					<property name="net.sf.jasperreports.export.html.class" value="preview_header_logo-50"/>
+					<printWhenExpression><![CDATA[!(((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("L") || ((com.agysoft.marco.noyau.edition.options.decorator.EditionOptionElement)$P{OPTIONS}.get("REFS")).getValue().contains("l"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{EDITION_LOGO_2}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

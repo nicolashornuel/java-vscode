@@ -1,0 +1,1068 @@
+{
+    "masterModel": "m_dce.jrxml",
+    "name": "Perso. edition",
+    "blocs": {
+        "m_dce.jrxml": {
+            "type": "blocContainer",
+            "key": "m_dce.jrxml",
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "displayable": true,
+            "model": "m_dce.jrxml",
+            "children": [
+                {
+                    "type": "blocElement",
+                    "key": "pagination",
+                    "parentKey": "m_dce.jrxml",
+                    "x": 261,
+                    "y": 44,
+                    "width": 220,
+                    "height": 13,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 9,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "DROITE",
+                        "vTextAlign": "MILIEU"
+                    }
+                },
+                {
+                    "type": "blocElement",
+                    "key": "cartouche.pied",
+                    "parentKey": "m_dce.jrxml",
+                    "x": 0,
+                    "y": 35,
+                    "width": 481,
+                    "height": 25,
+                    "displayable": true
+                }
+            ],
+            "margins": {
+                "left": 57,
+                "top": 57,
+                "right": 57,
+                "bottom": 57
+            },
+            "orientation": "PORTRAIT"
+        },
+        "p_essentielContrat.jrxml": {
+            "type": "blocContainer",
+            "key": "p_essentielContrat.jrxml",
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "displayable": true,
+            "model": "p_essentielContrat.jrxml",
+            "children": [],
+            "margins": {
+                "left": 57,
+                "top": 57,
+                "right": 57,
+                "bottom": 57
+            },
+            "orientation": "PORTRAIT"
+        },
+        "p_toc.jrxml": {
+            "type": "blocContainer",
+            "key": "p_toc.jrxml",
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "displayable": true,
+            "model": "p_toc.jrxml",
+            "children": [
+                {
+                    "type": "blocElement",
+                    "key": "toc.pageIndex3",
+                    "parentKey": "p_toc.jrxml",
+                    "x": 451,
+                    "y": 0,
+                    "width": 30,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "DROITE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "$F{pageIndex}"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "toc.pageIndex2",
+                    "parentKey": "p_toc.jrxml",
+                    "x": 451,
+                    "y": 0,
+                    "width": 30,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "DROITE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "$F{pageIndex}"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "toc.pageIndex1",
+                    "parentKey": "p_toc.jrxml",
+                    "x": 451,
+                    "y": 0,
+                    "width": 30,
+                    "height": 15,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 10,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "DROITE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "$F{pageIndex}"
+                }
+            ],
+            "margins": {
+                "left": 57,
+                "top": 57,
+                "right": 57,
+                "bottom": 57
+            },
+            "orientation": "PORTRAIT"
+        },
+        "p_dce_page_garde.jrxml": {
+            "type": "blocContainer",
+            "key": "p_dce_page_garde.jrxml",
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "displayable": true,
+            "model": "p_dce_page_garde.jrxml",
+            "children": [
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.9",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 355,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.8",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 334,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.consult.lot.objet",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 63,
+                    "y": 290,
+                    "width": 355,
+                    "height": 50,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 14,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$F{lot} != null ? $P{ENTITY}.getObjet() + \"\\n\" + \"Lot n° \"+$F{lot}.getData().toArray()[0].code + \" : \" + $F{lot}.getData().toArray()[0].objet : $P{ENTITY}.getObjet() + \"\\n\" + \"Lot n° ......................................\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.5",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 292,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.4",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 271,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.7",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 376,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.6",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 313,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.lib",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 89,
+                    "y": 426,
+                    "width": 97,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "\"CONTRAT N°\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.ac.lot.objet",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 35,
+                    "y": 247,
+                    "width": 411,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$F{lot}.getData().toArray()[0].objet"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.consult.lot.objet2",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 63,
+                    "y": 290,
+                    "width": 355,
+                    "height": 50,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 14,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{ENTITY}.getObjet()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.notification.lib",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 89,
+                    "y": 460,
+                    "width": 97,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "\"NOTIFIE LE\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.coord.adresse",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 35,
+                    "y": 200,
+                    "width": 411,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{ENTITY}.getCoordonnateurAdresseFormate()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.1",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 208,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "logo",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 13,
+                    "width": 481,
+                    "height": 77,
+                    "alignment": "GAUCHE",
+                    "displayable": true
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.0",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 187,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.3",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 229,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.numero.2",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 250,
+                    "y": 431,
+                    "width": 21,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 0,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "."
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.adresse.collectivite.2",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 509,
+                    "width": 481,
+                    "height": 18,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "\"<b>\" + $P{ENTITY}.getRaisonSocialeNiveauOrganisme() + \"</b><br/>\" + $P{ADRESSE_NIV_ORG}.getFormatteAdresseSansDenomination() + ($P{ADRESSE_NIV_ORG}.getContact() != null && $P{ADRESSE_NIV_ORG}.getContact().getTelephone() != null ? \"Tél : \" + $P{ADRESSE_NIV_ORG}.getContact().getTelephone() : \"\")"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.ac.typeattrib",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 35,
+                    "y": 207,
+                    "width": 411,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "\"A L'ACCORD-CADRE \" + ($F{typeattrib}.getData().toArray()[0].code == \"UNOPERATEUR\" ? \"MONO-ATTRIBUTAIRE\" : \"MULTI-ATTRIBUTAIRE\")"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.adresse.collectivite.1",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 509,
+                    "width": 240,
+                    "height": 18,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "\"<BR /><BR />\" + $P{ENTITY}.getRaisonSocialeOrganismePrincipale() + \"<BR />\" + $P{ENTITY}.getAdresseCompleteOrganismePrincipale()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.ac.lot.code",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 35,
+                    "y": 227,
+                    "width": 411,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "\"N°\" + $F{accordcadre}.getData().toArray()[0].code + \" / \" + \"LOT N°\" + $F{lot}.getData().toArray()[0].code"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.date.attrib",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 187,
+                    "y": 460,
+                    "width": 210,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$F{prestationAttribuee}.getData().toArray()[0].getDateAttribution().getTexte()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.adresse.collectivite.3",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 509,
+                    "width": 240,
+                    "height": 18,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "\"<b>\" + $P{ENTITY}.getRaisonSocialeNiveauOrganisme() + \"</b><br/>\" + $P{ADRESSE_NIV_ORG}.getFormatteAdresseSansDenomination() + ($P{ADRESSE_NIV_ORG}.getContact() != null && $P{ADRESSE_NIV_ORG}.getContact().getTelephone() != null ? \"Tél : \" + $P{ADRESSE_NIV_ORG}.getContact().getTelephone() : \"\")"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.ac.objet",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 35,
+                    "y": 247,
+                    "width": 411,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$F{accordcadre}.getData().toArray()[0].objet"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.consult.objet",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 63,
+                    "y": 290,
+                    "width": 355,
+                    "height": 50,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 14,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "com.agysoft.toolkit.utilitaires.StringTools.convert_CP1252($P{ENTITY}.getObjet())"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.cadreacheteur",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 89,
+                    "y": 414,
+                    "width": 308,
+                    "height": 12,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 7,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "\"Cadre réservé à l'acheteur\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.titre",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 110,
+                    "width": 481,
+                    "height": 25,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 14,
+                        "color": -1,
+                        "bgColor": -10066605,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{TITRE}.toUpperCase()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.adresse.membre",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 240,
+                    "y": 509,
+                    "width": 241,
+                    "height": 18,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "$P{ENTITY}.getMembreGroupementAdresseFormate()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.ac.code",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 35,
+                    "y": 227,
+                    "width": 411,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "\"N°\" + $F{accordcadre}.getData().toArray()[0].code"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.notif.lib",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 187,
+                    "y": 460,
+                    "width": 210,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 8,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "\"....... ....... / ....... ....... /\"+\n\" ....... ....... ....... .......\""
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.cc.code",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 89,
+                    "y": 460,
+                    "width": 308,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "($P{ENTITY}.getElaborationCahierCharge().getCodeEdition() == null? \"\" : \"N° du CC\" + ($P{TITRE}.contains(\"administratives\") ? \"A\" : \"\") + \"P\"+($P{ENTITY}.getElaborationCahierCharge().getCodeEdition() == null?\" : ..... ..... ..... ..... .....\":\" : \"+$P{ENTITY}.getElaborationCahierCharge().getCodeEdition()))"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.consult.dlrodlrc.lib",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 373,
+                    "width": 481,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{ENTITY}.getLibelleDlroDlrc()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.adresse.client",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 240,
+                    "y": 509,
+                    "width": 241,
+                    "height": 18,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "\"<BR /><BR />\" + \n(\n\t$P{ENTITY}.getSource().getNiveauOrganisme().getOrganismePrincipal().getOrganisme().getInfosJuridiques().getTypeRepresentation() != null \n\t? $P{ENTITY}.getSource().getNiveauOrganisme().getOrganismePrincipal().getOrganisme().getInfosJuridiques().getTypeRepresentation() + \" <BR />\" \n\t: \"\"\n) \n + $P{ENTITY}.getRaisonSocialeNiveauOrganisme() + \"<BR />\" \n + $P{ADRESSE_NIV_ORG}.getFormatteAdresseSansDenomination() + \"<BR />\"\n +  (\n \t$P{ADRESSE_NIV_ORG}.getContact() != null && $P{ADRESSE_NIV_ORG}.getContact().getTelephone() != null \n \t? \"Tél : \" + $P{ADRESSE_NIV_ORG}.getContact().getTelephone() \n \t: \"\"\n )"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.consult.dlrodlrc",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 393,
+                    "width": 481,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{ENTITY}.getDlroDlrc()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.contrat.code",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 187,
+                    "y": 431,
+                    "width": 210,
+                    "height": 14,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 12,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": false,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "GAUCHE",
+                        "vTextAlign": "HAUT"
+                    },
+                    "label": "$F{prestationAttribuee}.getData().toArray()[0].getCodeContrat()"
+                },
+                {
+                    "type": "blocElement",
+                    "key": "document.consult.type",
+                    "parentKey": "p_dce_page_garde.jrxml",
+                    "x": 0,
+                    "y": 165,
+                    "width": 481,
+                    "height": 20,
+                    "displayable": true,
+                    "style": {
+                        "police": "SansSerif",
+                        "size": 14,
+                        "color": -16777216,
+                        "bgColor": -1,
+                        "bold": true,
+                        "italic": false,
+                        "underline": false,
+                        "hTextAlign": "CENTRE",
+                        "vTextAlign": "MILIEU"
+                    },
+                    "label": "$P{ENTITY}.getTitreEntetePageDeGardeDCE()"
+                }
+            ],
+            "margins": {
+                "left": 57,
+                "top": 57,
+                "right": 57,
+                "bottom": 57
+            },
+            "orientation": "PORTRAIT"
+        }
+    },
+    "styles": {
+        "Heading 1": {
+            "size": 14,
+            "color": -16777216,
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "GAUCHE",
+            "vTextAlign": "HAUT"
+        },
+        "Heading 2": {
+            "size": 12,
+            "color": -16777216,
+            "bgColor": -1,
+            "bold": true
+        },
+        "Heading 3": {
+            "size": 11,
+            "color": -16777216,
+            "bgColor": -1,
+            "bold": true
+        },
+        "Normal": {
+            "police": "Trebuchet MS",
+            "size": 10,
+            "bgColor": -1
+        },
+        "ParagrapheIndent1": {
+            "bgColor": -1,
+            "hTextAlign": "JUSTIFIE",
+            "vTextAlign": "HAUT"
+        },
+        "ParagrapheIndent2": {
+            "bgColor": -1,
+            "hTextAlign": "JUSTIFIE",
+            "vTextAlign": "HAUT"
+        },
+        "ParagrapheIndent3": {
+            "bgColor": -1,
+            "hTextAlign": "JUSTIFIE",
+            "vTextAlign": "HAUT"
+        },
+        "PiedDePage": {
+            "size": 9,
+            "color": -16777216,
+            "bgColor": -1
+        },
+        "Title": {
+            "size": 18,
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "Title table": {
+            "size": 14,
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "TitreCadre": {
+            "size": 14,
+            "color": -1,
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table": {
+            "bgColor": -1,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "HAUT"
+        },
+        "table CF": {
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table CG": {
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table CH": {
+            "police": "Trebuchet MS",
+            "bgColor": -1,
+            "bold": true,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "MILIEU"
+        },
+        "table TD": {
+            "bgColor": -1
+        },
+        "tableGroupe": {
+            "bgColor": -1,
+            "hTextAlign": "CENTRE",
+            "vTextAlign": "HAUT"
+        }
+    },
+    "margins": {
+        "left": 29,
+        "top": 29,
+        "right": 29,
+        "bottom": 29
+    },
+    "bands": {},
+    "autoResize": true
+}
